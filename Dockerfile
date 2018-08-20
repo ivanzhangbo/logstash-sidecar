@@ -1,3 +1,4 @@
 FROM docker.elastic.co/logstash/logstash:6.3.2
-RUN rm -f /usr/share/logstash/pipeline/logstash.conf
+RUN rm -f /usr/share/logstash/config/logstash.yml
 ADD pipeline/ /usr/share/logstash/pipeline/
+
